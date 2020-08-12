@@ -1,15 +1,18 @@
-import LogIn from './userActions'
-
-const initialState = {
+const userInitialState = {
     user: '',
 }
 
-const user=(state=initialState, action) => {
+const user=(state=userInitialState, action) => {
     switch(action.type) {
         case 'LOGIN': 
         return {
-            user: 'id'
+            user: 'id',
+            type: 'worker'
         }
+        case 'LOGOUT':
+            return {
+                user: ''
+            }
     
         default: 
         return state;
@@ -17,3 +20,4 @@ const user=(state=initialState, action) => {
 }
 
 export default user;
+

@@ -5,4 +5,12 @@ export const handleLogin = (user) => {
     }
 }
 
+export const startHandleLogin = (user) => {
+    return (dispatch) => {
+        console.log('starting login')
+        setTimeout(() => {
+            dispatch(handleLogin(user))
+        }, 2000)
+    }
+}
 
