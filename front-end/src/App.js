@@ -18,21 +18,8 @@ function App(props) {
 
   return (    
         <Switch>
-          <Route path='/login'>
-            <LoginPage/>
-          </Route>
-          <Route path='/dashboard'>
-            <Dashboard />
-          </Route>
-          <Route path='/list'>
-            <Dashboard />
-          </Route>
-          <Route path='/entnahme'>
-            <Dashboard />
-          </Route>
-          <Route path='/rueckgabe'>
-            <Dashboard />
-          </Route>
+          <Route path='/login' component={LoginPage} />
+          <Route path='*' component={Dashboard} />
         </Switch>
   );
 }

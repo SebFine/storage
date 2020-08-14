@@ -10,7 +10,7 @@ export const startHandleLogin = (user) => {
         console.log('starting login')
         setTimeout(() => {
             dispatch(handleLogin(user))
-        }, 2000)
+        }, 500)
     }
 }
 
