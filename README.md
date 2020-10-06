@@ -7,4 +7,5 @@
 * `pipenv shell` to run environment
 * `pipenv install`
 * `python manage.py runserver` to start local server
+* to see the documentation add `swagger/` to url
 
